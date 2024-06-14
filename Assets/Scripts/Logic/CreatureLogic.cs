@@ -73,6 +73,7 @@ public class CreatureLogic: ICharacter
     public int Attack
     {
         get{ return baseAttack; }
+        set { baseAttack = value;}
     }
 
 	//Amor piercing
@@ -256,10 +257,37 @@ public class CreatureLogic: ICharacter
 		Debug.Log ("Il reste " + targetArmorAfter+" armure et "+targetHealthAfter+" HP"); 
     }
 
+
+
     public void AttackCreatureWithID(int uniqueCreatureID)
     {
         CreatureLogic target = CreatureLogic.CreaturesCreatedThisGame[uniqueCreatureID];
         AttackCreature(target);
+    }
+
+    public void SwitchHealthAttack (CreatureLogic target)
+    {
+        
+        int targetAttackAfter;
+        int targetHealthAfter;
+
+        AttacksLeftThisTurn--;
+       
+        // calculate the values so that the creature does not fire the DIE command before the Attack command is sent
+
+		targetHealthAfter = target.Health;
+    	targetAttackAfter = target.Attack;
+
+		new CreatureSwitchCommand(target.UniqueCreatureID, UniqueCreatureID, targetHealthAfter,targetAttackAfter ).AddToQueue();
+
+		target.Health = targetAttackAfter;
+
+		target.Attack = targetHealthAfter;
+    }
+    public void SwitchHealthAttackID (int uniqueCreatureID)
+    {
+        CreatureLogic target = CreatureLogic.CreaturesCreatedThisGame[uniqueCreatureID];
+        SwitchHealthAttack(target);
     }
 
     // STATIC For managing IDs

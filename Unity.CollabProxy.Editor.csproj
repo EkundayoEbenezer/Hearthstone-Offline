@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{23214a2d-96ec-cf55-ffa3-c1b4678b3d48}</ProjectGuid>
+    <ProjectGuid>{2b8c682c-8987-c2e8-075f-acfc3c5f2ba1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.CollabProxy.Editor</AssemblyName>
@@ -435,49 +435,49 @@
         <HintPath>C:\Program Files\Unity 2022.1.20f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="DOTweenEditor">
-        <HintPath>C:\Users\Hp\Desktop\New folder (6)\PROJECT\Assets\DOTween\Editor\DOTweenEditor.dll</HintPath>
+        <HintPath>C:\Users\Hp\Desktop\Heartstone\Hearthstone-Offline\Assets\DOTween\Editor\DOTweenEditor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
-        <HintPath>C:\Users\Hp\Desktop\New folder (6)\PROJECT\Library\PackageCache\com.unity.collab-proxy@1.17.2\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+        <HintPath>C:\Users\Hp\Desktop\Heartstone\Hearthstone-Offline\Library\PackageCache\com.unity.collab-proxy@1.17.2\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="DOTween43">
-        <HintPath>C:\Users\Hp\Desktop\New folder (6)\PROJECT\Assets\DOTween\DOTween43.dll</HintPath>
+        <HintPath>C:\Users\Hp\Desktop\Heartstone\Hearthstone-Offline\Assets\DOTween\DOTween43.dll</HintPath>
     </Reference>
     <Reference Include="DOTween50">
-        <HintPath>C:\Users\Hp\Desktop\New folder (6)\PROJECT\Assets\DOTween\DOTween50.dll</HintPath>
+        <HintPath>C:\Users\Hp\Desktop\Heartstone\Hearthstone-Offline\Assets\DOTween\DOTween50.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Plastic.Antlr3.Runtime">
-        <HintPath>C:\Users\Hp\Desktop\New folder (6)\PROJECT\Library\PackageCache\com.unity.collab-proxy@1.17.2\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+        <HintPath>C:\Users\Hp\Desktop\Heartstone\Hearthstone-Offline\Library\PackageCache\com.unity.collab-proxy@1.17.2\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.YamlDotNet">
-        <HintPath>C:\Users\Hp\Desktop\New folder (6)\PROJECT\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
+        <HintPath>C:\Users\Hp\Desktop\Heartstone\Hearthstone-Offline\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
     </Reference>
     <Reference Include="DOTween46">
-        <HintPath>C:\Users\Hp\Desktop\New folder (6)\PROJECT\Assets\DOTween\DOTween46.dll</HintPath>
+        <HintPath>C:\Users\Hp\Desktop\Heartstone\Hearthstone-Offline\Assets\DOTween\DOTween46.dll</HintPath>
     </Reference>
     <Reference Include="DOTween">
-        <HintPath>C:\Users\Hp\Desktop\New folder (6)\PROJECT\Assets\DOTween\DOTween.dll</HintPath>
+        <HintPath>C:\Users\Hp\Desktop\Heartstone\Hearthstone-Offline\Assets\DOTween\DOTween.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.TextureAssets">
-        <HintPath>C:\Users\Hp\Desktop\New folder (6)\PROJECT\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
+        <HintPath>C:\Users\Hp\Desktop\Heartstone\Hearthstone-Offline\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.IonicZip">
-        <HintPath>C:\Users\Hp\Desktop\New folder (6)\PROJECT\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
+        <HintPath>C:\Users\Hp\Desktop\Heartstone\Hearthstone-Offline\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
     </Reference>
     <Reference Include="log4netPlastic">
-        <HintPath>C:\Users\Hp\Desktop\New folder (6)\PROJECT\Library\PackageCache\com.unity.collab-proxy@1.17.2\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+        <HintPath>C:\Users\Hp\Desktop\Heartstone\Hearthstone-Offline\Library\PackageCache\com.unity.collab-proxy@1.17.2\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-        <HintPath>C:\Users\Hp\Desktop\New folder (6)\PROJECT\Library\PackageCache\com.unity.visualscripting@1.7.8\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+        <HintPath>C:\Users\Hp\Desktop\Heartstone\Hearthstone-Offline\Library\PackageCache\com.unity.visualscripting@1.7.8\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-        <HintPath>C:\Users\Hp\Desktop\New folder (6)\PROJECT\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
+        <HintPath>C:\Users\Hp\Desktop\Heartstone\Hearthstone-Offline\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="unityplastic">
-        <HintPath>C:\Users\Hp\Desktop\New folder (6)\PROJECT\Library\PackageCache\com.unity.collab-proxy@1.17.2\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
+        <HintPath>C:\Users\Hp\Desktop\Heartstone\Hearthstone-Offline\Library\PackageCache\com.unity.collab-proxy@1.17.2\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-        <HintPath>C:\Users\Hp\Desktop\New folder (6)\PROJECT\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
+        <HintPath>C:\Users\Hp\Desktop\Heartstone\Hearthstone-Offline\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
         <HintPath>C:\Program Files\Unity 2022.1.20f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\mscorlib.dll</HintPath>
@@ -857,27 +857,27 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.PlasticSCM.Editor.csproj">
-      <Project>{7751ea68-0733-38ca-0574-ce1c9496f41f}</Project>
+      <Project>{ba15b962-963c-74ae-85e7-9a185eedb485}</Project>
       <Name>Unity.PlasticSCM.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Services.Core.Editor.csproj">
-      <Project>{890ed1cd-df58-9b00-729c-fd87cbe8e8fe}</Project>
+      <Project>{afa4bb82-8a01-a0b5-e604-c357b2718880}</Project>
       <Name>Unity.Services.Core.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{1076eeea-979a-a5e6-9128-70580fc56d8b}</Project>
+      <Project>{4872c985-68c6-173c-dff5-689335716612}</Project>
       <Name>UnityEditor.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{0bf163c2-09e2-3e39-42ff-62a6896b6ec6}</Project>
+      <Project>{a9f16174-9b4f-b6a8-581c-3f93d7697ea3}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.TestRunner.csproj">
-      <Project>{ac6a1adb-c78e-db59-4238-25fee666aeb8}</Project>
+      <Project>{d33dac33-d348-677f-e11d-47cfd5d0fc25}</Project>
       <Name>UnityEngine.TestRunner</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.TestRunner.csproj">
-      <Project>{6cdbe77c-b0ad-3de5-2a8f-818e2f5e3a91}</Project>
+      <Project>{14343aa8-c6f4-564e-fe6a-746ab31804ed}</Project>
       <Name>UnityEditor.TestRunner</Name>
     </ProjectReference>
   </ItemGroup>

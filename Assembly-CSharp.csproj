@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{b504cb9a-0aa9-ae75-9fe9-342d9b469c1d}</ProjectGuid>
+    <ProjectGuid>{92eaee22-b0fb-5cc3-bd2d-65d9a3013e3f}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -41,6 +41,7 @@
      <Compile Include="Assets\Scripts\Commands\PlayASpellCardCommand.cs" />
      <Compile Include="Assets\Scripts\Visuals\PlayerArea.cs" />
      <Compile Include="Assets\Scripts\Visuals\TableVisual.cs" />
+     <Compile Include="Assets\Scripts\Commands\SwitchCommand.cs" />
      <Compile Include="Assets\Scripts\Visuals\DamageEffect.cs" />
      <Compile Include="Assets\Scripts\Visuals\HandVisual.cs" />
      <Compile Include="Assets\Scripts\Logic\TurnsAndAI\AITurnMaker.cs" />
@@ -63,6 +64,7 @@
      <Compile Include="Assets\Scripts\SO Asset Scripts\CharacterAsset\CharacterAsset.cs" />
      <Compile Include="Assets\Scripts\Dragging\DraggingTest\DraggableTestWithActions.cs" />
      <Compile Include="Assets\Scripts\Logic\CreatureScripts\BiteOwner.cs" />
+     <Compile Include="Assets\Scripts\Commands\CreatureSwitchCommand.cs" />
      <Compile Include="Assets\Scripts\SO Asset Scripts\CardAsset\CardAsset.cs" />
      <Compile Include="Assets\Scripts\Logic\Interfaces.cs" />
      <Compile Include="Assets\Scripts\Visuals\DamageEffectTest.cs" />
@@ -111,6 +113,7 @@
      <Compile Include="Assets\Scripts\Logic\TurnsAndAI\PlayerTurnMaker.cs" />
      <Compile Include="Assets\Scripts\Visuals\WhereIsTheCardOrCreature.cs" />
      <Compile Include="Assets\Scripts\Visuals\IDHolder.cs" />
+     <Compile Include="Assets\Scripts\Logic\SpellScripts\SwitchMinionStats.cs" />
      <Compile Include="Assets\Scripts\Logic\TurnManager.cs" />
      <Compile Include="Assets\Scripts\Logic\Deck.cs" />
      <Compile Include="Assets\Scripts\Logic\SpellScripts\SpellEffect.cs" />
@@ -365,22 +368,22 @@
         <HintPath>C:\Program Files\Unity 2022.1.20f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
     <Reference Include="DOTween43">
-        <HintPath>C:\Users\Hp\Desktop\New folder (6)\PROJECT\Assets\DOTween\DOTween43.dll</HintPath>
+        <HintPath>C:\Users\Hp\Desktop\Heartstone\Hearthstone-Offline\Assets\DOTween\DOTween43.dll</HintPath>
     </Reference>
     <Reference Include="DOTween50">
-        <HintPath>C:\Users\Hp\Desktop\New folder (6)\PROJECT\Assets\DOTween\DOTween50.dll</HintPath>
+        <HintPath>C:\Users\Hp\Desktop\Heartstone\Hearthstone-Offline\Assets\DOTween\DOTween50.dll</HintPath>
     </Reference>
     <Reference Include="DOTween46">
-        <HintPath>C:\Users\Hp\Desktop\New folder (6)\PROJECT\Assets\DOTween\DOTween46.dll</HintPath>
+        <HintPath>C:\Users\Hp\Desktop\Heartstone\Hearthstone-Offline\Assets\DOTween\DOTween46.dll</HintPath>
     </Reference>
     <Reference Include="DOTween">
-        <HintPath>C:\Users\Hp\Desktop\New folder (6)\PROJECT\Assets\DOTween\DOTween.dll</HintPath>
+        <HintPath>C:\Users\Hp\Desktop\Heartstone\Hearthstone-Offline\Assets\DOTween\DOTween.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-        <HintPath>C:\Users\Hp\Desktop\New folder (6)\PROJECT\Library\PackageCache\com.unity.visualscripting@1.7.8\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+        <HintPath>C:\Users\Hp\Desktop\Heartstone\Hearthstone-Offline\Library\PackageCache\com.unity.visualscripting@1.7.8\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-        <HintPath>C:\Users\Hp\Desktop\New folder (6)\PROJECT\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
+        <HintPath>C:\Users\Hp\Desktop\Heartstone\Hearthstone-Offline\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>C:\Program Files\Unity 2022.1.20f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
@@ -751,87 +754,87 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.VisualScripting.Flow.Editor.csproj">
-      <Project>{e4bb1726-2d4a-3d57-1146-cdfd15906b10}</Project>
+      <Project>{7890f32e-b3b9-dd24-371f-6652e678a7ca}</Project>
       <Name>Unity.VisualScripting.Flow.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VSCode.Editor.csproj">
-      <Project>{cb306a67-7f87-6446-d414-014854ba8c59}</Project>
+      <Project>{b34ceb0e-9ba1-2201-b3cb-38ab083d6537}</Project>
       <Name>Unity.VSCode.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Services.Core.Analytics.csproj">
-      <Project>{b074d255-69ec-038f-5dc7-30c6d2299b0e}</Project>
+      <Project>{53af5156-642d-902e-c86e-1dab1ed00f17}</Project>
       <Name>Unity.Services.Core.Analytics</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.Shared.Editor.csproj">
-      <Project>{e288d2d2-3421-00a9-bdba-9d360476db1e}</Project>
+      <Project>{6a6f8c5b-e000-4d4c-58eb-8a73dfd0cbd5}</Project>
       <Name>Unity.VisualScripting.Shared.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
-      <Project>{16402029-cbf4-2423-fe6f-845701703e39}</Project>
+      <Project>{d0dc9548-b339-914e-9880-084f1c0f4329}</Project>
       <Name>Unity.TextMeshPro.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Services.Core.Environments.csproj">
-      <Project>{2c6a67fa-b506-2005-4d91-f2189b5984e5}</Project>
+      <Project>{781224e9-1973-0c56-d9b0-54bc5f9cddc7}</Project>
       <Name>Unity.Services.Core.Environments</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualStudio.Editor.csproj">
-      <Project>{3a81d4cc-e600-e737-8784-e064eef3ca48}</Project>
+      <Project>{30dda058-6399-c1e8-2dab-c78f90fe0f4c}</Project>
       <Name>Unity.VisualStudio.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Timeline.Editor.csproj">
-      <Project>{5174cb11-e212-2fd6-cdf3-cdfe840cd8d8}</Project>
+      <Project>{d14f69cf-cd15-d8c6-467d-8b35a26b775b}</Project>
       <Name>Unity.Timeline.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Timeline.csproj">
-      <Project>{4573301a-6d06-8260-168c-6089ff5f0f56}</Project>
+      <Project>{f255abb4-d0bd-fe19-01c0-f7a8363a05f6}</Project>
       <Name>Unity.Timeline</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.Core.Editor.csproj">
-      <Project>{2c340012-4dc2-fb2c-24e1-8b1026df2e4a}</Project>
+      <Project>{14180545-eb03-4792-2fc2-d7b1de17cfb1}</Project>
       <Name>Unity.VisualScripting.Core.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.csproj">
-      <Project>{e2935f45-8e71-ddac-d92d-23284a03ce24}</Project>
+      <Project>{c5f6abb0-45b8-50e6-96aa-f57f7e79b870}</Project>
       <Name>Unity.TextMeshPro</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.State.Editor.csproj">
-      <Project>{a2cacff1-0264-6403-e6aa-3d91040025f0}</Project>
+      <Project>{a8ff2d9a-bb6d-d759-f07f-5eff9b9d0467}</Project>
       <Name>Unity.VisualScripting.State.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.SettingsProvider.Editor.csproj">
-      <Project>{a3810e12-a4b0-7242-ceb3-a56b8a902f94}</Project>
+      <Project>{df6c2d9a-1b47-2ffa-a952-7badf95b3c90}</Project>
       <Name>Unity.VisualScripting.SettingsProvider.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.Flow.csproj">
-      <Project>{29b30b7f-b896-93da-a3cd-499394d4838a}</Project>
+      <Project>{d89003ac-94ff-caca-fbc4-ba3bd793acb4}</Project>
       <Name>Unity.VisualScripting.Flow</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{1076eeea-979a-a5e6-9128-70580fc56d8b}</Project>
+      <Project>{4872c985-68c6-173c-dff5-689335716612}</Project>
       <Name>UnityEditor.UI</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.PlasticSCM.Editor.csproj">
-      <Project>{7751ea68-0733-38ca-0574-ce1c9496f41f}</Project>
+      <Project>{ba15b962-963c-74ae-85e7-9a185eedb485}</Project>
       <Name>Unity.PlasticSCM.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Rider.Editor.csproj">
-      <Project>{921c0dbe-835d-76be-2d6d-936b086ee0e6}</Project>
+      <Project>{afca0f5c-c42d-b876-5e90-c820677af5b9}</Project>
       <Name>Unity.Rider.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{0bf163c2-09e2-3e39-42ff-62a6896b6ec6}</Project>
+      <Project>{a9f16174-9b4f-b6a8-581c-3f93d7697ea3}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Services.Core.csproj">
-      <Project>{a70e5280-12ce-06cc-3305-b9c323bf03b4}</Project>
+      <Project>{f7b6230c-1a88-980d-6810-c42eee01400b}</Project>
       <Name>Unity.Services.Core</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.State.csproj">
-      <Project>{aec9b0dc-0c15-951b-66e1-d739aa0f378c}</Project>
+      <Project>{4a0df18b-349a-f5ca-4e84-7fc4f4e5576f}</Project>
       <Name>Unity.VisualScripting.State</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.Core.csproj">
-      <Project>{d2f96455-e30d-6c8c-8a76-1adb70300dce}</Project>
+      <Project>{c5586c91-cc13-fa18-9206-043d387c1ea1}</Project>
       <Name>Unity.VisualScripting.Core</Name>
     </ProjectReference>
   </ItemGroup>

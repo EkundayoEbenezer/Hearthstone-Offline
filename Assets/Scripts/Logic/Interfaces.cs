@@ -5,6 +5,7 @@ public interface ICharacter: IIdentifiable
 {	
 	int Health { get;    set;}
 	int Armor { get;    set;}
+    int Attack { get;    set;}
 
     void Die();
 }

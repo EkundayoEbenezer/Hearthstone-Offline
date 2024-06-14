@@ -72,9 +72,9 @@ public class OneCreatureManager : MonoBehaviour
         }
     }	
 
-	public void TakeDamage(int amount, int healthAfter, int armorAfter)
+	public void TakeDamage(int amount, int healthAfter, int armorAfter, int attackAfter)
     {
-		Debug.Log("Il a "+healthAfter+" HP et "+armorAfter+" armure. Dans OneCreatureManager");
+
         /*if (amount > 0)
         {*/
 		if (armorAfter == 0) 
@@ -82,7 +82,24 @@ public class OneCreatureManager : MonoBehaviour
             DamageEffect.CreateDamageEffect(transform.position, amount);
          //}
 
-		HealthText.text = healthAfter.ToString();
+		HealthText.text = HealthText.ToString();
+		AttackText.text = AttackText.ToString();
+		ArmorText.text = armorAfter.ToString();
+
+		
+    }
+    public void SwitchStats(int amount, int healthAfter, int armorAfter, int attackAfter)
+    {
+
+        /*if (amount > 0)
+        {*/
+		if (armorAfter == 0) 
+			ArmorIcon.SetActive (false);
+            DamageEffect.CreateDamageEffect(transform.position, amount);
+         //}
+
+		HealthText.text = attackAfter.ToString();
+		AttackText.text = healthAfter.ToString();
 		ArmorText.text = armorAfter.ToString();
 
 		

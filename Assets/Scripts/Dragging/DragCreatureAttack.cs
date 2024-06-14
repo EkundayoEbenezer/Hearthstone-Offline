@@ -160,50 +160,6 @@ public class DragCreatureAttack : DraggingActions {
         lr.enabled = false;
         triangleSR.enabled = false;
 
-        if (Target != null)
-        {
-            int targetID = Target.GetComponent<IDHolder>().UniqueID;
-            Debug.Log("Target ID: " + targetID);
-            //if there is no enemies with Taunt
-            if (enemiesWithTaunt == 0)
-            {
-                if (targetID == GlobalSettings.Instance.LowPlayer.PlayerID || targetID == GlobalSettings.Instance.TopPlayer.PlayerID)
-                {
-                    // attack character
-                    Debug.Log("Attacking " + Target);
-                    Debug.Log("TargetID: " + targetID);
-                    CreatureLogic.CreaturesCreatedThisGame[GetComponentInParent<IDHolder>().UniqueID].GoFace();
-                    targetValid = true;
-                }
-                else if (CreatureLogic.CreaturesCreatedThisGame[targetID] != null)
-                {
-                    // if targeted creature is still alive, attack creature
-                    targetValid = true;
-                    CreatureLogic.CreaturesCreatedThisGame[GetComponentInParent<IDHolder>().UniqueID].AttackCreatureWithID(targetID);
-                    Debug.Log("Attacking " + Target);
-                }
-            }
-            //if there is any enemy with taunt
-            else
-            {
-                //cant attack a player
-                if (targetID == GlobalSettings.Instance.LowPlayer.PlayerID || targetID == GlobalSettings.Instance.TopPlayer.PlayerID)
-                {
-                    targetValid = false;
-                }
-                //if creature has taunt, the target is valid
-                else if (Target.GetComponent<OneCreatureManager>().hasTaunt == true)
-                {
-                    targetValid = true;
-                    CreatureLogic.CreaturesCreatedThisGame[GetComponentInParent<IDHolder>().UniqueID].AttackCreatureWithID(targetID);
-                    Debug.Log("Attacking " + Target);
-                }
-                //can´t attack creature without taunt
-                else
-                { targetValid = false; }
-            }
-            enemiesWithTaunt = 0;
-    }
     }
         
     // NOT USED IN THIS SCRIPT

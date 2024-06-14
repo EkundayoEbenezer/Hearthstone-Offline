@@ -14,8 +14,7 @@ public class CreatureAttackCommand : Command
     private int DamageTakenByAttacker;
     private int DamageTakenByTarget;
 
-    public CreatureAttackCommand
-    (int targetID, int attackerID, int damageTakenByAttacker, int damageTakenByTarget, int attackerHealthAfter, int targetHealthAfter, int attackerArmorAfter, int targetArmorAfter)
+    public CreatureAttackCommand (int targetID, int attackerID, int damageTakenByAttacker, int damageTakenByTarget, int attackerHealthAfter, int targetHealthAfter, int attackerArmorAfter, int targetArmorAfter)
     {
         this.TargetUniqueID = targetID;
         this.AttackerUniqueID = attackerID;
@@ -26,6 +25,7 @@ public class CreatureAttackCommand : Command
         this.AttackerArmorAfter = attackerArmorAfter;
         this.TargetArmorAfter = targetArmorAfter;
     }
+
 
     public override void StartCommandExecution()
     {

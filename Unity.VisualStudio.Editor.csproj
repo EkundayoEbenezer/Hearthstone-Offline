@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{3a81d4cc-e600-e737-8784-e064eef3ca48}</ProjectGuid>
+    <ProjectGuid>{30dda058-6399-c1e8-2dab-c78f90fe0f4c}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.VisualStudio.Editor</AssemblyName>
@@ -331,10 +331,10 @@
         <HintPath>C:\Program Files\Unity 2022.1.20f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-        <HintPath>C:\Users\Hp\Desktop\New folder (6)\PROJECT\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
+        <HintPath>C:\Users\Hp\Desktop\Heartstone\Hearthstone-Offline\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-        <HintPath>C:\Users\Hp\Desktop\New folder (6)\PROJECT\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
+        <HintPath>C:\Users\Hp\Desktop\Heartstone\Hearthstone-Offline\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
         <HintPath>C:\Program Files\Unity 2022.1.20f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\mscorlib.dll</HintPath>
@@ -714,19 +714,19 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{1076eeea-979a-a5e6-9128-70580fc56d8b}</Project>
+      <Project>{4872c985-68c6-173c-dff5-689335716612}</Project>
       <Name>UnityEditor.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{0bf163c2-09e2-3e39-42ff-62a6896b6ec6}</Project>
+      <Project>{a9f16174-9b4f-b6a8-581c-3f93d7697ea3}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.TestRunner.csproj">
-      <Project>{ac6a1adb-c78e-db59-4238-25fee666aeb8}</Project>
+      <Project>{d33dac33-d348-677f-e11d-47cfd5d0fc25}</Project>
       <Name>UnityEngine.TestRunner</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.TestRunner.csproj">
-      <Project>{6cdbe77c-b0ad-3de5-2a8f-818e2f5e3a91}</Project>
+      <Project>{14343aa8-c6f4-564e-fe6a-746ab31804ed}</Project>
       <Name>UnityEditor.TestRunner</Name>
     </ProjectReference>
   </ItemGroup>

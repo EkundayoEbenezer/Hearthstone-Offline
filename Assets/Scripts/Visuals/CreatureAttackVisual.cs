@@ -61,5 +61,31 @@ public class CreatureAttackVisual : MonoBehaviour
                 //Command.CommandExecutionComplete();
             });
     }
+
+    public void SwitchTarget
+        (int targetUniqueID, int targetAttackAfter, int targetHealthAfter)
+    {
+        Debug.Log(targetUniqueID);
+        manager.CanAttackNow = false;
+        GameObject target = IDHolder.GetGameObjectWithID(targetUniqueID);
+
+        // bring this creature to front sorting-wise.
+        w.BringToFront();
+        VisualStates tempState = w.VisualState;
+        w.VisualState = VisualStates.Transition;
+
+        transform.DOMove(target.transform.position, 0.5f).SetLoops(2, LoopType.Yoyo).SetEase(Ease.InCubic).OnComplete(() =>
+            {
+                w.SetTableSortingOrder();
+                w.VisualState = tempState;
+
+                manager.HealthText.text = targetAttackAfter.ToString();
+				manager.AttackText.text = targetHealthAfter.ToString();
+                Sequence s = DOTween.Sequence();
+                s.AppendInterval(1f);
+                s.OnComplete(Command.CommandExecutionComplete);
+                //Command.CommandExecutionComplete();
+            });
+    }
         
 }

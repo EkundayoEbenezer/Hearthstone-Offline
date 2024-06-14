@@ -106,6 +106,7 @@ public class Player : MonoBehaviour, ICharacter
     }
 
 	public int Armor{ get; set; }
+	public int Attack{ get; set; }
 
     // CODE FOR EVENTS TO LET CREATURES KNOW WHEN TO CAUSE EFFECTS
     public delegate void VoidWithNoArguments();
@@ -317,7 +318,7 @@ public class Player : MonoBehaviour, ICharacter
         {
             GameObject g = IDHolder.GetGameObjectWithID(crl.UniqueCreatureID);
             if(g!= null)
-                g.GetComponent<OneCreatureManager>().CanAttackNow = (crl.AttacksLeftThisTurn > 0) && !removeAllHighlights;
+            g.GetComponent<OneCreatureManager>().CanAttackNow = (crl.AttacksLeftThisTurn > 0) && !removeAllHighlights;
         }   
         // highlight hero power
         PArea.HeroPower.Highlighted = (!usedHeroPowerThisTurn) && (ManaLeft > 1) && !removeAllHighlights;

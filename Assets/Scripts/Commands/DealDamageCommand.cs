@@ -29,7 +29,7 @@ public class DealDamageCommand : Command {
         else
         {
             // target is a creature
-            target.GetComponent<OneCreatureManager>().TakeDamage(amount, healthAfter, armorAfter);
+            target.GetComponent<OneCreatureManager>().TakeDamage(amount, healthAfter, armorAfter,0);
         }
         CommandExecutionComplete();
     }
